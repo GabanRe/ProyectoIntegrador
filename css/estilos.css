@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.bgColorRosa{
+    background-color: #f28f97;
+}
+.bgGris{
+    background-color: #383737;
+}
+.ancho{
+    width: 80%;
+}
+.header__flex{
+    background-color:rgb(56, 56, 56);
+    display: flex;
+    justify-content:center;
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+   
+    width:50%;
+    padding-left:2rem;
+}
+.img__logo{
+    width:20%;
+  
+}
+
+.tituloBsAs{
+    color: white
+}
+
+.navegador{
+   
+    padding-right: 2.5rem;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.link{
+    text-decoration: none;
+    color: rgb(182, 180, 180);
+    font-size: 0.75rem;
+}
+
+.link1{
+    text-decoration: none;
+    color: rgb(38, 224, 88);
+    font-size: 0.75rem;
+}
+.imagenMain{
+    width:100%;
+}
+/*pantalla divida*/
+.sectionDividida{
+    display: flex;
+    height:70vh;
+}
+.alto{
+    height:70vh;
+}
+.imagenIzq{
+    height:100%;
+    width:50%;
+    background-image: url("../assets/imagenes/honolulu.jpg");
+    background-size: cover;
+}
+.imagenIzqB{
+    height:100%;
+ 
+    background-image: url("../assets/imagenes/honolulu.jpg");
+    background-size: cover;
+}
+.contenidoDerB{
+    height:100%;
+  
+    padding:2rem ;
+    background-color: #343333;
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contenidoDer{
+    height:100%;
+    width:50%;
+    padding:2rem ;
+    background-color: #343333;
+    color:white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sectionTarjetas{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.conoce{
+    color:gray;
+    font-size:1.5rem;
+   text-align: center;
+}
+.padreTarjetas{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas__flex{
+    width:80%;
+    display:flex;
+   
+    justify-content:space-between;
+   
+}
+.tarjeta{
+    background-color: white;
+    width: 30%;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+.tarjetaImagen{
+    width: 100%;
+    border-radius: 10px;
+}
+.tarjetaContenido{
+    padding:1rem;
+}
+.tarjetaParrafo{
+    width:80%;
+}
+.sectionPrincipal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1copia.jpg");
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.contenidoPrincipal{
+    width: 100%;
+    text-align:center;
+    color:white;
+}
+.orador{
+    color:white;
+    padding: 20px
+}
+
+.orador1{
+    text-align: center;
+}
+
+.table1{
+    text-align: center;
+    line-height: 30px;
+}
+
+.tickets{
+    color:white
+}
+
+.row{
+    font-size: small;
+}
+
+
+/*celular*/
+@media screen and (max-width:768px){
+  .header__flex{
+    flex-direction: column;
+    
+ }
+ .logo{
+    width:100%;
+    justify-content:space-between;
+    padding-right:2rem;
+    margin-bottom: 0.5rem;
+ }
+ .navegador{
+    width:100%;
+    flex-direction: column;
+    padding-right: initial;
+ }   
+ .link{
+    border-bottom: 1px solid rgb(57, 57, 57);
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+    font-size: 1.2rem;
+ }
+
+.link1{
+    border-bottom: 1px solid rgb(57, 57, 57);
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+    font-size: 1.2rem;
+}
+
+
+ /*imagen principal*/
+ .sectionPrincipal{
+    height: 60vh;
+    justify-content:center;
+ }
+ .parrafoPrincipal{
+    line-height:1.5rem;
+    text-align: center;
+ }
+
+ /*tarjetas*/
+ .tarjetas__flex{
+    flex-direction: column;
+    align-items: center;
+ }
+ .tarjeta{
+    width:90%;
+    margin-bottom: 1rem;
+    box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+                -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+                -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+ }
+ .tituloTarjetas{
+    margin-bottom:1rem;
+ }
+
+}
+/*tablet*/
+@media screen and (min-width:769px) and (max-width:1024px){
+    .header__flex{
+        height: 5rem;
+      
+    }
+    .logo{
+        width:30%;
+    }
+    .navegador{
+        width:70%;
+        padding:0;
+        justify-content:space-between;
+    }
+
+}
+
+/*tamaño destock*/
+@media screen and (min-width:1025px){
+
+}
