@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprar Tickets</title>
+        <link rel="shortcut icon" href="favicon.ico">
+         <!-- Bootstrap CSS 
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+       
+      
+    </head>
+     
+    <body>
+        <header class="header__flex">
+            <div class="logo">
+                <img class="img__logo" src="../assets/imagenes/codoacodo.png" alt="Logo de codo a codo" loading="lazy">
+                <h2 class="tituloBsAs"> Conf Bs As</h2>
+            </div>
+          
+            <nav class="navegador">
+                <a  class="link" href="../index.html">La Conferencia </a>
+                <a  class="link" href="./pages/los_oradores.html">Los oradores</a>
+                <a  class="link" href="./lugaryfecha.html">El lugar y la Fecha</a>
+                <a  class="link" href="./pages/contacto.html">Conviértete en Orador</a>
+                <a  class="link1" href="#">Comprar Tickets</a>
+            </nav>
+        </header>
+    
+        <!-- <header>
+            <nav class="navbar navbar-expand-lg navbar-light bgGris">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="./assets/imagenes/codoacodo.png" alt="Logo de codo a codo" loading="lazy" width="100">
+                        <h4 class="text-white">Conf.Bs.As.</h4>
+                    </div>
+                   
+                 </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="ancho d-flex justify-content-end">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-primary ">
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                            </li>
+                            <li class="nav-item"> <a  class="nav-link text-white" href="./pages/los_oradores.html">Los oradores</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-white" href="./pages/lugaryfecha.html">El lugar y la Fecha</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-white" href="./pages/contacto.html">Conviértete en Orador</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-white" href="./pages/comprartickets.html">Comprar Tickets</a></li>
+                        </ul>
+
+                    </div>
+                   
+                   
+                  </div>
+                </div>
+            </nav>
+
+        </header>-->
+       
+
+        <div class="card-group">
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Estudiante</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <p class="card-text">80%</p>
+                <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Trainee</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <p class="card-text">50%</p>
+                <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Junior</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <p class="card-text">15%</p>
+                <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="título-gral">Venta <span>Valor de ticket $200</span></h2>
+
+          <form action="">
+            <div class="row-gx-2">
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
+                </div>
+                <div class="col-md mb-3">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+                </div>
+              </div>
+              <div class="col-md mb-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="mail" required>
+            </div>
+
+            </div>
+            <div class="row gx-2">
+                <div class="col-md mb-3">
+                    <label for="cantidadTickets" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1">
+            </div> 
+                <div class="col-md mb-3">
+                    <label for="categoriaSelect" class="form-label">Categoria</label>
+                    <select class="form-select" aria-label="Categoria" id="categoriaSelect">
+                        <option value="" selected>-- Seleccione --</option>
+                        <option value="0">Sin Categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="alert alert-primary mt-2 mb-4" role="alert">
+                Total a pagar: $ <span id="totalPago" class="aling-middle"></span>
+            </div>
+            <div class="row gx-2">
+                <div class="col-md mb-3">
+                    <button type="reset" class="w-100 btn btn-lg btn-form" id="btnBorrar">Borrar</button>
+                </div>
+                <div class="col-md mb-3">
+                    <button type="button" class="w-100 btn btn-lg btn-form" id="btnResumen">Resumen</button>
+              </div>
+            </div>
+          </form>
+          
+       </footer>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+       <script src="../js/comprartickets.js"></script>
+
+    </body>
+</html>
